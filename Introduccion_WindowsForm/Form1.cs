@@ -27,7 +27,8 @@ namespace Introduccion_WindowsForm
 
             if (ls_usuario=="cgarcia" && ls_password == "cl@u2025**")
             {
-                Form2 form2 = new Form2();
+                var text = "Bienvenido " + ls_usuario;
+                Form2 form2 = new Form2(text);
                 
                 progressBar1.Visible = true;
                 progressBar1.Value = 100;

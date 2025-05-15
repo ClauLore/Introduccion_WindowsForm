@@ -12,9 +12,18 @@ namespace Introduccion_WindowsForm
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        private string _message;
+        public Form2(string message)
         {
+            _message = message;
             InitializeComponent();
+            txtShow.Text = _message;
+        }
+
+      
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

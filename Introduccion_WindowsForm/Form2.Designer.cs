@@ -28,32 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txtShow = new TextBox();
+            btnExit = new Button();
             SuspendLayout();
             // 
-            // dataGridView1
+            // txtShow
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(73, 84);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(668, 290);
-            dataGridView1.TabIndex = 0;
+            txtShow.Location = new Point(51, 25);
+            txtShow.Name = "txtShow";
+            txtShow.Size = new Size(574, 23);
+            txtShow.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(550, 92);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(75, 23);
+            btnExit.TabIndex = 1;
+            btnExit.Text = "Salir";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            ClientSize = new Size(660, 143);
+            Controls.Add(btnExit);
+            Controls.Add(txtShow);
             Name = "Form2";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private TextBox txtShow;
+        private Button btnExit;
     }
 }

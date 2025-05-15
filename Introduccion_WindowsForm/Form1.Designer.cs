@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnAdd = new Button();
             label1 = new Label();
             txtUsuario = new TextBox();
             txtPassword = new TextBox();
             label2 = new Label();
             progressBar1 = new ProgressBar();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnAdd
@@ -49,7 +52,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(92, 25);
+            label1.Location = new Point(178, 29);
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 1;
@@ -57,14 +60,14 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(213, 22);
+            txtUsuario.Location = new Point(299, 26);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(100, 23);
             txtUsuario.TabIndex = 2;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(213, 62);
+            txtPassword.Location = new Point(299, 66);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(100, 23);
@@ -73,7 +76,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(92, 65);
+            label2.Location = new Point(178, 69);
             label2.Name = "label2";
             label2.Size = new Size(67, 15);
             label2.TabIndex = 3;
@@ -88,11 +91,22 @@
             progressBar1.Value = 50;
             progressBar1.Visible = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(26, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 87);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(443, 266);
+            Controls.Add(pictureBox1);
             Controls.Add(progressBar1);
             Controls.Add(txtPassword);
             Controls.Add(label2);
@@ -101,6 +115,7 @@
             Controls.Add(btnAdd);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -113,5 +128,6 @@
         private TextBox txtPassword;
         private Label label2;
         private ProgressBar progressBar1;
+        private PictureBox pictureBox1;
     }
 }
